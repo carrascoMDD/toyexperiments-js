@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>choir-sample-01 page</title>
+    <script src="lib/zebra/zebra.js" type="text/javascript"></script>
+
+    <script src="requirepaths.js" type="text/javascript"></script>
+
+
+
+    <script>
+        fChoirJS_LogModuleLoads = null; /* function( theMessage) { if( false) { return null;} console.log( theMessage);}; */
+    </script>
+
+
+    <script>
+        if( typeof cChoirJS_RequirePaths === 'undefined') {
+            console.log("cChoirJS_RequirePaths is undefined");
+        }
+
+        var require = { paths: cChoirJS_RequirePaths};
+
+    </script>
+
+    <script data-main="scripts/main.js"  src="scripts/require.js"></script>
+</head>
+<body>
+
+<script src="scripts/choirJStools/sonorizer/loadsounds.js" type="text/javascript"></script>
+
+<h1>DEV Performance visualizer</h1>
+<p><strong>Experiment for Google Chrome - may run with some versions of Firefox, albeit very slowly.</strong></p>
+<p><strong>Audio plays only in Google Chrome.</strong></p>
+
+
+</body>
+</html>

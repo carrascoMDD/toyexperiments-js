@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>lab-pics01 Laboratory for Pictures 01</title>
+
+    <script src="requirepaths.js" type="text/javascript"></script>
+
+
+    <script>
+        fChoirJS_LogModuleLoads = null; /* function( theMessage) { if( false) { return null;} console.log( theMessage);}; */
+    </script>
+
+
+    <script>
+        if( typeof cChoirJS_RequirePaths === 'undefined') {
+            console.log("cChoirJS_RequirePaths is undefined");
+        }
+
+        var require = { paths: cChoirJS_RequirePaths};
+
+    </script>
+
+    <script data-main="scripts/lab-pics01-main.js"  src="scripts/require.js"></script>
+</head>
+<body>
+
+<h1>Test asynchronous load of image resources as base64 text files</h1>
+<p><strong>
+    Experiment tested in Google Chrome Version 26.0.1410.63 and Firefox 20.0.
+    </strong>
+</p>
+
+
+</body>
+</html>

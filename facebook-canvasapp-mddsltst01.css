@@ -1,0 +1,86 @@
+
+.MDDcss3Style-ThumbnailsHolder {
+    width: 300px;
+}
+
+.MDDcss3Style-Placeholder-Hidden {
+    width:  133px;
+    height: 102px;
+    display: none;
+}
+
+
+.MDDcss3Style-Placeholder-Shown {
+    background-color: white;
+    width:  133px;
+    height: 102px;
+    display: inline;
+}
+
+
+.MDDcss3Style-canvas-Thumbnail-ORIG {
+    width:  133px;
+    height: 102px;
+}
+
+
+.MDDcss3Style-canvas-CenterStage-ORIG {
+    position:absolute;
+    display: block;
+    margin-top:  -356px;
+    margin-left:  286px;
+
+    width:  664px;
+    height: 508px;
+    z-index:8;
+}
+
+
+
+.MDDcss3Style-canvas-Thumbnail {
+    width:  133px;
+    height: 102px;
+}
+
+
+.MDDcss3Style-canvas-Thumbnail-ToCenterStage {
+    position:absolute;
+    display: block;
+    width:  133px;
+    height: 102px;
+    margin-top:  -102px;
+    margin-left:  286px;
+}
+
+
+.MDDcss3Style-canvas-CenterStage {
+    position:absolute;
+    display: block;
+    margin-top:  -356px;
+    margin-left:  286px;
+
+    width:  664px;
+    height: 508px;
+
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+
+.MDDcss3Style-canvas-Thumbnail-FromCenterStage {
+    position:absolute;
+    display: block;
+    width:  133px;
+    height: 102px;
+    margin-top:  -102px;
+    margin-left:  286px;
+
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+

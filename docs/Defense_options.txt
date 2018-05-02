@@ -1,0 +1,68 @@
+Options for defensive programming in ECMAscript and choirJS.
+
+Programmers shall be able to specify,
+for any function, ToBeDefended hereinafter,
+another function Defense  hereinafter 
+to control the values of actual arguments
+before invocation of the ToBeDefended function.
+
+The support mechanism to speficy 
+a Defense function for a ToBeDefended function
+is to install a function _DefendWith in the
+ECMAscript Function prototype,
+if one of same name is not already installed.
+
+The syntactic mechanism to speficy 
+a Defense function for a ToBeDefended function
+is to invoke on the ToBeDefended function
+the DefendWith function supplying as argument:
+- a Constraints object
+- a Defense Function
+
+
+
+
+For such a ToBeDefended, for which a Defense function has been specified:
+
+If a framework constant cAllowDefense is true
+at the time of creating the ToBeDefended function,
+then the ToBeDefended function shall be wrapped
+in another function Wrapper hereinafter,
+and the Wapper function shall be returned
+to be assigned and referenced where the ToBeDefended function
+would have been assigned and referenced, if it had not been defended.
+ 
+If the framework constant cAllowDefense is false
+at the time of creating the ToBeDefended function,
+then the ToBeDefended function shall be returned
+and assigned and referenced as usual for the ToBeDefended.
+
+
+The Wrapper is constructed such that upon execution it shall:
+
+When invoked with actual arguments theArgs hereinafter
+
+Execute the Defense function.
+  Shall raise exceptions 
+  if it encounters any problems with theArgs
+
+(if no exceptions have been raised by the Defense function then)
+Execute theToBeDefended.
+
+
+The Defense function may have named parameters,
+which are convenient for easy check by free expressions,
+but are not required to do so.
+
+Free expressions may also check the variable length
+arguments meta-variable.
+
+
+
+The Defense function may contain any free expressions,
+usually checking the values of arguments 
+and raising exceptions upon any problems encountered.
+
+
+ 
+

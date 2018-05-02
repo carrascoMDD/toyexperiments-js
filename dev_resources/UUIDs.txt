@@ -1,0 +1,101 @@
+
+
+
+
+
+
+
+
+
+
+
+
+a98322f5-7c62-4316-8215-c468f2abb944
+ed935606-9599-48eb-b0bc-f3bb3fd02bb6
+c7013ada-c166-4aad-9960-83e63bf6e330
+e87253f2-6a15-4b3b-a13c-2a92696430e7
+2e7285b5-68ca-4776-9077-d9e78b53e3c1
+6fb1ce92-fb94-457c-9253-26be0e72f392
+7f07bcfb-c623-4515-9ea2-e0eff403d948
+d647a20d-59d4-47b2-829c-109ad4052e0f
+946b6704-e4f0-4f66-b0ce-dea01c726b0c
+57d36cde-ddaa-44cb-8124-d6225d8aa172
+99e37e44-697e-4ee6-bd15-3b0490277679
+80bc6b96-abc4-4eff-8393-e462ce9cc9b9
+7504fe1b-5396-4e3f-9aad-55ca7796f3ca
+79e63214-e6ed-4933-b138-41cd2a5edc56
+24c2ec48-56db-4f50-9a3b-f09de2562612
+b6c23cfd-c062-42bb-ae51-6888dec23f49
+592702da-1e2a-4818-b226-1aff00be1719
+eb33cffb-ed8d-4d1d-b7b8-e1370a2a47fa
+8b5f28e8-a5f2-4ab4-ad1c-2a07d1debb52
+ea3ded44-d8d3-4624-952f-eef5e97d2e24
+be63a26a-13f2-41e3-ba1c-bb98494cf08b
+ca3b4535-82d8-4bc3-84a3-66ff42c4b5c2
+80a27676-8f0d-4998-8285-53bd009c4835
+799f3a30-88e1-4603-90e2-ace1edb4a2e4
+f0bc2ba9-162e-4e3e-aafd-cf515649c1fc
+bae772c0-9238-459e-8cd9-ac5bc1d808bf
+7e7ebfb2-9a77-40f7-97dd-804f17a623c6
+3d5b3a4a-e7ec-4c77-b0c9-78f1e9ed7833
+9fea668d-a5d9-4573-9cda-f1c7ab0f779a
+4048d7d3-d047-44f8-812c-da52269a027a
+2cf5c0ec-9b2d-4bef-8f50-372a9a2e15cd
+e087fc7d-bcbb-4049-9d80-1af6449ef90e
+ebbb97d3-20c4-4dbb-af9e-e4d7fc8dab2b
+7bdb65b2-ff9b-411d-9452-5fe4a716b347
+b9e379c2-962d-40d5-b16f-6a11e2f3fce2
+c728b5ba-05e8-47ba-852a-ef21537ce023
+35212040-91cf-4ef6-8386-3e10af03d29c
+3e22bcfc-f8c8-4f76-9604-c5d50d2f0914
+dda33f63-0b07-4e4d-b4d5-7bb3542015ca
+05c3c382-aea4-4061-8018-01fcb99ea3c6
+c2310dbf-f64f-41b6-80ed-6fa2296a695f
+ef5a1b6a-80c0-436f-87cb-0f9dd631035b
+bafd8a4c-7c9d-4c45-9762-77e40aa914e9
+6c1f8e0b-b8a6-4cb1-8b54-414315283e08
+e5b765b3-c5d7-4075-9b7c-293ea0085b3c
+0e9773c3-9762-4842-b816-3b9a347fdd4c
+eb43b889-d723-4aec-980c-dc772950dd9f
+4a44923e-063b-4441-bd12-4f4a4f9f025f
+b4d3ffd6-799f-465a-b38b-f6086a9eac43
+5c873455-08ad-4c6a-9856-a1f000d384a7
+7675f885-483d-4284-9df1-8343ae22780e
+fa69a586-dd45-4163-8122-6c5741a73824
+697aa9ba-46bc-4f4b-9552-65e25d5a0c37
+a3e17c6d-b6ba-4644-96cc-02b7930041d0
+d9f23f3c-2cb3-46e7-ab56-f75c6de88162
+56566762-e45b-48d2-8e9f-bf4b3d163211
+1ad6c1c6-032c-48e6-8686-0d32a21205c6
+30e4fe61-80b4-4d3a-9f90-0aae0e6070fa
+1bb275d8-4dee-41e0-9fc5-0cbc2477b699
+f4c6cbb5-86ac-4aed-beee-0c34632e56d2
+
+
+
+
+
+function fNewUUID() {
+    var aUUID = "";
+
+    for (var anIndex = 0; anIndex < 32; anIndex++) {
+
+        var aRandom = Math.floor(Math.random() * 16);
+
+        if ([8,12,16,20].indexOf(anIndex) >= 0) {
+            aUUID += '-';
+        }
+        aUUID += (anIndex == 12 ? 4 : (anIndex == 16 ? (aRandom & 3 | 8) : aRandom)).toString(16);
+    }
+    return aUUID;
+}
+
+var aUUID=fNewUUID();
+
+for (var anIndex =0; anIndex < 100; anIndex++) {
+    console.log(fNewUUID());
+}
+
+
+
+

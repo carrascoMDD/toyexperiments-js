@@ -1,0 +1,21 @@
+----------------------------------
+----------------------------------
+----------------------------------
+v0.3
+Added a visualization mechanism for Changes produced during Performer activity.
+
+----------------------------------
+v0.2
+Added modules to realize role for playing scores:
+   Performers, Conductor, Chonductor and various Chonductors, Orchductor and various Orchductors.
+
+----------------------------------
+v0.1
+
+Compose score with some voices, some starts, and a simple choreography.
+Prepare launching of performance by creating initial chants.
+
+
+----------------------------------
+----------------------------------
+----------------------------------

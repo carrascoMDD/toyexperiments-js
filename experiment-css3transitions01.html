@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>experiment-css3transitions01.html</title>
+
+    <script src="requirepaths.js" type="text/javascript"></script>
+
+
+    <script>
+        fChoirJS_LogModuleLoads = null; /* function( theMessage) { if( false) { return null;} console.log( theMessage);}; */
+        cChoirJS_EchoAudio_PlaySource = 'Oscillator';
+    </script>
+
+
+    <script>
+        if( typeof cChoirJS_RequirePaths === 'undefined') {
+            console.log("cChoirJS_RequirePaths is undefined");
+        }
+
+        var require = { paths: cChoirJS_RequirePaths};
+
+    </script>
+
+    <script data-main="scripts/experiment-css3transitions01-main.js"  src="scripts/require.js"></script>
+
+    <style type="text/css">
+
+
+        .MDDcss3Style-canvas-Left-Initial{
+            position:absolute;
+            margin-top:600px;
+            display:block;
+            z-index:4;
+        }
+        .MDDcss3Style-canvas-Front-Initial{
+            position:absolute;
+            margin-top:600px;
+            margin-left:664px;
+            display:block;
+            z-index:5;
+        }
+        .MDDcss3Style-canvas-Top-Initial{
+            position:absolute;
+            margin-top: 154px;
+            margin-left:332px;
+            display:block;
+            z-index:6;
+        }
+
+
+        .MDDcss3Style-canvas-Left{
+            /*
+            transition-delay: 3s;
+            -webkit-transition-delay: 3s;
+            -moz-transition-delay: 3s;
+            -o-transition-delay: 3s;
+            */
+            transition: all 10s;
+            -webkit-transition: all 10s;
+            -moz-transition: all 10s;
+            -o-transition: all 10s;
+
+            -webkit-transform:skew(0deg, 30deg);
+            -moz-transform:skew(0deg, 30deg);
+            -ms-transform:skew(0deg, 30deg);
+            -o-transform:skew(0deg, 30deg);
+            transform:skew(0deg, 30deg);
+        }
+        .MDDcss3Style-canvas-Front{
+            /*
+           transition-delay: 3s;
+           -webkit-transition-delay: 3s;
+           -moz-transition-delay: 3s;
+           -o-transition-delay: 3s;
+           */
+
+            transition: all 10s;
+            -webkit-transition: all 10s;
+            -moz-transition: all 10s;
+            -o-transition: all 10s;
+
+            -webkit-transform:skew(0deg, -30deg);
+            -moz-transform:skew(0deg, -30deg);
+            -ms-transform:skew(0deg, -30deg);
+            -o-transform:skew(0deg, -30deg);
+            transform:skew(0deg, -30deg);
+        }
+        .MDDcss3Style-canvas-Top{
+            /*
+           transition-delay: 3s;
+           -webkit-transition-delay: 3s;
+           -moz-transition-delay: 3s;
+           -o-transition-delay: 3s;
+           */
+
+            transition: all 10s;
+            -webkit-transition: all 10s;
+            -moz-transition: all 10s;
+            -o-transition: all 10s;
+
+            -webkit-transform: skew(60deg, -30deg)  scale( 1, 0.755);
+            -moz-transform:skew(60deg, -30deg)  scale( 1, 0.755);
+            -ms-transform:skew(60deg, -30deg)  scale( 1, 0.755);
+            -o-transform:skew(60deg, -30deg)  scale( 1, 0.755);
+            transform:skew(60deg, -30deg)  scale( 1, 0.755);
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<a href="/contents/ECMAscript-experiments" ><img src="/logo.png" /></a>
+
+<h1>CSS Transitions 01-from straight pictures to an animated cube</h1>
+<small>
+    <a href="/contents/ECMAscript-experiments" >
+        Back to portal
+    </a>
+</small>
+<strong>You may want to zoom out your browser to view the whole example.</strong>
+<p>Experiment to test CSS3 transitions.
+    The transitions are applied to canvas elements transformed to form 3 sides of a cube, while a process paints images in the canvas.
+    <br/>
+    List of all examples:&emsp;
+    <a href="facebook-canvasapp-mddsltst01.html" >Facebook Canvas Application</a>,&emsp;
+    <a href="experiment-css3thumbnails01.html"  >CSS3 Thumbnails</a>,&emsp;
+    <a href="experiment-motionpictures01.html"   >Motion Pictures</a>,&emsp;
+    <a href="experiment-motionfilters01.html"    >Motion Filters</a>,&emsp;
+    <a href="experiment-motionthumbnails01.html" >Motion Thumbnails</a>,&emsp;
+    <a href="experiment-css3transforms01.html"   >CSS3 Transforms</a>,&emsp;
+    <a href="experiment-css3transitions01.html"  >CSS3 Transitions</a>
+
+</p>
+<p><small>Copyright 2013 Antonio Carrasco Valero and Model Driven Development sl (Valencia Spain, Bonn Germany)</small></p>
+
+
+
+
+
+<canvas id="id-experiment-css3transitions-canvas01" class="MDDcss3Style-canvas-Left-Initial" ></canvas>
+
+<canvas id="id-experiment-css3transitions-canvas02" class="MDDcss3Style-canvas-Top-Initial" ></canvas>
+
+<canvas id="id-experiment-css3transitions-canvas03" class="MDDcss3Style-canvas-Front-Initial" ></canvas>
+
+
+</body>
+</html>

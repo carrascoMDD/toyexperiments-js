@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>development version experiment-css3transforms02.html</title>
+
+    <script src="requirepaths.js" type="text/javascript"></script>
+
+
+    <script>
+        fChoirJS_LogModuleLoads = null; /* function( theMessage) { if( false) { return null;} console.log( theMessage);}; */
+        cChoirJS_EchoAudio_PlaySource = 'Oscillator';
+    </script>
+
+
+    <script>
+        if( typeof cChoirJS_RequirePaths === 'undefined') {
+            console.log("cChoirJS_RequirePaths is undefined");
+        }
+
+        var require = { paths: cChoirJS_RequirePaths};
+
+    </script>
+
+    <script data-main="scripts/experiment-css3transforms02-main.js"  src="scripts/require.js"></script>
+
+    <style type="text/css">
+        .MDDcss3Style-canvas-skewed01 {
+            transform:  rotate(0deg) scale(1.1) skew(-30deg, 10deg) translate(200px, 0);
+            -webkit-transform:  rotate(0deg) scale(1.1) skew(-30deg, 10deg) translate(200px, 0);
+            -moz-transform: rotate(0deg) scale(1.1) skew(-30deg, 10deg) translate(200px, 0);
+            -o-transform:  rotate(0deg) scale(1.1) skew(-30deg, 10deg) translate(200px, 0);
+            -ms-transform:  rotate(0deg) scale(1.1) skew(-30deg, 10deg) translate(200px, 0);
+        }
+
+
+
+        .xMDDcss3Style-canvas-Left{
+            position:absolute;
+            /*transform*/
+            -webkit-transform:skew(0deg, 30deg);
+            -moz-transform:skew(0deg, 30deg);
+            -ms-transform:skew(0deg, 30deg);
+            -o-transform:skew(0deg, 30deg);
+            transform:skew(0deg, 30deg);
+            /*
+            background-color:#ccc;
+            height:100px;
+            width:100px;
+            */
+            display:block;
+            z-index:4;
+        }
+        .xMDDcss3Style-canvas-Top{
+            position:absolute;
+            margin-top:-56px;
+            margin-left:640px;
+            /*transform*/
+            -webkit-transform:skew(60deg, -30deg);
+            -moz-transform:skew(60deg, -30deg);
+            -ms-transform:skew(60deg, -30deg);
+            -o-transform:skew(60deg, -30deg);
+            transform:skew(60deg, -30deg);
+            /*
+            background-color:#eee;
+            height:58px;
+            width:90px;
+            */
+            display:block;
+            z-index:3;
+        }
+        .xMDDcss3Style-canvas-Front{
+            position:absolute;
+            margin-top:0px;
+            margin-left:0px;
+            /*transform*/
+            -webkit-transform:skew(0deg, -30deg);
+            -moz-transform:skew(0deg, -30deg);
+            -ms-transform:skew(0deg, -30deg);
+            -o-transform:skew(0deg, -30deg);
+            transform:skew(0deg, -30deg);
+            /*
+             background-color:#ddd;
+            height:100px;
+            width:90px;
+            */
+            display:block;
+            z-index:4;
+        }
+
+
+
+        .MDDcss3Style-canvas-Left{
+            position:absolute;
+            margin-top:600px;
+
+            /*transform*/
+            -webkit-transform:skew(0deg, 30deg);
+            -moz-transform:skew(0deg, 30deg);
+            -ms-transform:skew(0deg, 30deg);
+            -o-transform:skew(0deg, 30deg);
+            transform:skew(0deg, 30deg);
+            /*
+            background-color:#ccc;
+            height:100px;
+            width:100px;
+            */
+            display:block;
+            z-index:4;
+        }
+       .MDDcss3Style-canvas-Front{
+            position:absolute;
+            margin-top:600px;
+            margin-left:664px; /* 640 + 12 + 12 */
+            /*transform*/
+            -webkit-transform:skew(0deg, -30deg);
+            -moz-transform:skew(0deg, -30deg);
+            -ms-transform:skew(0deg, -30deg);
+            -o-transform:skew(0deg, -30deg);
+            transform:skew(0deg, -30deg);
+           /*
+            background-color:#ddd;
+           height:100px;
+           width:90px;
+           */
+            display:block;
+            z-index:5;
+        }
+        .MDDcss3Style-canvas-Top{
+            position:absolute;
+            margin-top: 154px; /* -046px -508px 480 + 16 + 12 */
+            margin-left:332px; /* ??? 640 + 12 + 12) * 0.5 === sin (60 deg) */
+            /*transform*/
+            -webkit-transform: skew(60deg, -30deg)  scale( 1, 0.755);
+            -moz-transform:skew(60deg, -30deg)  scale( 1, 0.755);
+            -ms-transform:skew(60deg, -30deg)  scale( 1, 0.755);
+            -o-transform:skew(60deg, -30deg)  scale( 1, 0.755);
+            transform:skew(60deg, -30deg)  scale( 1, 0.755);
+            /*
+            background-color:#eee;
+            height:58px;
+            width:90px;
+            */
+            display:block;
+            z-index:6;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<a href="/contents/ECMAscript-experiments" ><img src="/logo.png" /></a>
+
+<h1>CSS Transforms 02 - an animated cube - development version</h1>
+<small>
+    <a href="/contents/ECMAscript-experiments" >
+        Back to portal
+    </a>
+</small>
+<strong>You may want to zoom out your browser to view the whole example.</strong>
+<p>Development Version of experiment to test CSS3 transformations.
+    The transformations are applied to canvas elements, while a process paints images in the canvas.
+    <br/>
+    List of all examples:&emsp;
+    <a href="facebook-canvasapp-mddsltst02.html" >Facebook Canvas Application</a>,&emsp;
+    <a href="experiment-css3thumbnails01.html"  >CSS3 Thumbnails</a>,&emsp;
+    <a href="experiment-motionpictures01.html"   >Motion Pictures</a>,&emsp;
+    <a href="experiment-motionfilters01.html"    >Motion Filters</a>,&emsp;
+    <a href="experiment-motionthumbnails01.html" >Motion Thumbnails</a>,&emsp;
+    <a href="experiment-css3transforms01.html"   >CSS3 Transforms</a>,&emsp;
+    <a href="experiment-css3transitions01.html"  >CSS3 Transitions</a>
+</p>
+
+
+<p><small>Copyright 2013 Antonio Carrasco Valero and Model Driven Development sl (Valencia Spain, Bonn Germany)</small></p>
+
+
+<!--
+<canvas id="id-experiment-css3transforms-canvas01"
+    class="MDDcss3Style-canvas-skewed01"/>
+ -->
+
+
+<!--
+
+<div  class="MDDcss3Style-canvas-Left"  >
+<canvas id="id-experiment-css3transforms-canvas01" />
+</div>
+
+<div  class="MDDcss3Style-canvas-Top" >
+<canvas id="id-experiment-css3transforms-canvas02" />
+</div>
+
+<div  class="MDDcss3Style-canvas-Front" >
+    <canvas id="id-experiment-css3transforms-canvas03" />
+</div>
+ -->
+
+
+
+<canvas id="id-experiment-css3transforms-canvas01" class="MDDcss3Style-canvas-Left" ></canvas>
+
+<canvas id="id-experiment-css3transforms-canvas02" class="MDDcss3Style-canvas-Top" ></canvas>
+
+<canvas id="id-experiment-css3transforms-canvas03" class="MDDcss3Style-canvas-Front" ></canvas>
+
+</body>
+</html>

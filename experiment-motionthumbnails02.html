@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>experiment-motionthumbnails02.html</title>
+
+    <script src="requirepaths.js" type="text/javascript"></script>
+
+
+    <script>
+        fChoirJS_LogModuleLoads = null; /* function( theMessage) { if( false) { return null;} console.log( theMessage);}; */
+        cChoirJS_EchoAudio_PlaySource = 'Oscillator';
+    </script>
+
+
+    <script>
+        if( typeof cChoirJS_RequirePaths === 'undefined') {
+            console.log("cChoirJS_RequirePaths is undefined");
+        }
+
+        var require = { paths: cChoirJS_RequirePaths};
+
+    </script>
+
+    <script data-main="scripts/experiment-motionthumbnails02-main.js"  src="scripts/require.js"></script>
+
+    <style type="text/css">
+
+
+        .MDDcss3Style-ThumbnailsHolder {
+            width: 300px;
+        }
+
+        .MDDcss3Style-Placeholder-Hidden {
+            width:  133px;
+            height: 102px;
+            display: none;
+        }
+
+
+        .MDDcss3Style-Placeholder-Shown {
+            background-color: white;
+            width:  133px;
+            height: 102px;
+            display: inline;
+        }
+
+
+        .MDDcss3Style-canvas-Thumbnail {
+            width:  133px;
+            height: 102px;
+        }
+
+
+        .MDDcss3Style-canvas-CenterStage {
+            position:absolute;
+            display: block;
+            margin-top:  -356px;
+            margin-left:  286px;
+
+            width:  664px;
+            height: 508px;
+            z-index:8;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<a href="/contents/ECMAscript-experiments" ><img src="/logo.png" /></a>
+
+<h1>Motion Pictures with thumbnails</h1>
+<small>
+    <a href="/contents/ECMAscript-experiments" >
+        Back to portal
+    </a>
+</small>
+<p>
+    Variation with thumbnails of experiment to test AJAX load of binary resources as base64 encoded texts.
+    Binary resources in this case are images to display as a frame animation of stop-motion pictures.
+    <br/>Note: Browsers load images asynchronously, and therefore the case in this example is not an actual need.
+    Images have been chosen as the type of resources to load from AJAX as the stop motion animations
+    allow to perceive the performance of the process.
+    Other case easy to perceive would be loading sounds for i.e. a MIDI sequencer.
+    <br/>
+    Runs faster in Firefox. Chrome frame rate not sustained with more than three motion animations. Try pausing one or two.
+    <br/>
+    List of all examples:&emsp;
+    <a href="facebook-canvasapp-mddsltst02.html" >Facebook Canvas Application</a>,&emsp;
+    <a href="experiment-css3thumbnails01.html"  >CSS3 Thumbnails</a>,&emsp;
+    <a href="experiment-motionpictures01.html"   >Motion Pictures</a>,&emsp;
+    <a href="experiment-motionfilters01.html"    >Motion Filters</a>,&emsp;
+    <a href="experiment-motionthumbnails01.html" >Motion Thumbnails</a>,&emsp;
+    <a href="experiment-css3transforms01.html"   >CSS3 Transforms</a>,&emsp;
+    <a href="experiment-css3transitions01.html"  >CSS3 Transitions</a>
+</p>
+
+<p><small>Copyright 2013 Antonio Carrasco Valero and Model Driven Development sl (Valencia Spain, Bonn Germany)</small></p>
+
+
+<div id="MDD-ThumbnailsHolder" class="MDDcss3Style-ThumbnailsHolder" >
+</div>
+
+
+</body>
+</html>
