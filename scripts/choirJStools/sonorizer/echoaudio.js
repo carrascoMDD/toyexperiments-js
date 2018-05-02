@@ -888,7 +888,11 @@ var aM_EchoAudio = function (m_ConstValues_Tools,  m_Functionx, m_Error, m_Instr
             anOscillator.frequency.type = _cOscillatorType;
             anOscillator.frequency.value = aFrequency;
 
+            /* See https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Porting_webkitAudioContext_code_to_standards_based_AudioContext
+            WAS:
             var anEnvelope = theAudioContext.createGainNode();
+            */
+            var anEnvelope = theAudioContext.createGain();
 
             anEnvelope.gain.setValueAtTime( 0, theSoundBeginTime );
 
